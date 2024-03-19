@@ -1,17 +1,17 @@
 
-import './App.css'
-import LoginSignup from './Components/Login&SignUp/LoginSignup'
+
+import { useState } from 'react'
+import NewsBoard from './Components/NewsApp/NewsBoard'
+import NewsNav from './Components/NewsApp/NewsNav'
+
 
 function App() {
-
-
+const [category,setcategorys]=useState("general")
   return (
     <>
-    
-        <LoginSignup/>
-      
-   
-       
+
+    <NewsNav setcategorys={setcategorys} />   
+    <NewsBoard category={category}/>
     </>
   )
 }
