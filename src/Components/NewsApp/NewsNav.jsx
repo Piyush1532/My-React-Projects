@@ -37,3 +37,8 @@ const newsNavbar = ({setcategorys}) => {
 }
 
 export default newsNavbar
+
+//paste in App.js for Newsproject
+// const [category,setcategorys]=useState("general")
+{/* <NewsNav setcategorys={setcategorys} />   
+<NewsBoard category={category}/> */}
